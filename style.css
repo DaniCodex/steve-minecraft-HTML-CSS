@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #b2f285;
+}
+.head {
+    width: 6rem;
+    height: 5.4rem;
+    background-color: #cd8d69;
+}
+.cabello {
+    height: 1.5rem;
+    background-color: #493021;
+    position: relative;
+}
+.cabello::before {
+    content: '';
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    transform: translate(0,1rem);
+    background-color: #493021;
+}
+.eyes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.eye-right,
+.eye-left {
+    position: relative;
+    width: 1.5rem;
+    height: .7rem;
+    background-color:#5835c4;
+}
+.pupila-right,
+.pupila-left {
+    height:.7rem ;
+    width: .7rem;
+    background-color: #fff;
+}
+.pupila-left {
+    position: absolute;
+    right: 0;
+}
+.nose {
+    width: 1.5rem;
+    height: .8rem;
+    background-color: #ae7250;
+    margin: auto;
+}
+.mouth {
+    position: relative;
+    width: 3rem;
+    height: .8rem;
+    background-color: #5b3a1b;
+    margin: 10px auto;
+}
+.mouth::before {
+    content: '';
+    top: -100%;
+    position: absolute;
+    height: .8rem;
+    width: .8rem;
+    background-color: #5b3a1b;
+}
+.mouth::after {
+    content: '';
+    right: 0;
+    top: -100%;
+    position: absolute;
+    height: .8rem;
+    width: .8rem;
+    background-color: #5b3a1b;
+}
+.main {
+    width: 6rem;
+    height: 9rem;
+    position: relative;
+    background-color: #14cbcf;
+}
+.arm-right,
+.arm-left {
+    position: absolute;
+    width: 3rem;
+    height: 9rem;
+    right: 100%;
+    background-color: #14cbcf;
+}
+.arm-left {
+    left:100%;
+    border-left: solid #7cd6d8 2px;
+}
+.arm-right {
+    border-right: solid #7cd6d8 2px;
+}
+.arm-left::before,
+.arm-right::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 5.5rem;
+    width: 100%;
+    background-color: #cd8d69;
+}
+.neck {
+    position: absolute;
+    width: 3rem;
+    height: .8rem;
+    background-color: #cd8d69;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.neck::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    width: 1.5rem;
+    height: .8rem;
+    background-color: #cd8d69;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.legs {
+    width: 6rem;
+    height: 7rem;
+    background-color: #494697;
+}
+.shoes {
+    width: 6rem;
+    height: 1.5rem;
+    background-color: #31302b;
+}
